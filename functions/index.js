@@ -50,7 +50,9 @@ router.post('/unip/*', Authorized.Internal, RoutesUNIP.Internal, (req, res) => {
 });
 
 router.post('/teste', (req, res) => {
+    
     console.log('TESTE')
+    res.json('teste')
 });
 
 app.use('/gDJw8MNHlXJI', router);
